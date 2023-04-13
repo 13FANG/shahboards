@@ -1,0 +1,59 @@
+/* Navigation */
+.navbar {display: flex;background-color: #007bff;overflow: hidden;max-height: 47px;}
+.navbar ul {list-style-type: none;margin: 0;padding: 0;}
+.navbar li {display: flex;float: left;}
+.navbar li a {
+  display: block;color: #fff;text-align: center;white-space: nowrap;
+  padding: 14px 16px;text-decoration: none;transition: background-color 0.3s ease;
+}
+.navbar li a:hover {background-color: #0056b3;}
+.navbar li a::after {
+  content: '';display: block;position: absolute;bottom: 0;
+  left: 50%;width: 0;height: 3px;background-color: #fff;
+  transition: width 0.3s ease, left 0.3s ease;transform: translateX(-50%);
+}
+.navbar li a:hover::after {width: 100%;left: 0;}
+@media (max-width: 800px) {
+  .navbar {overflow: auto;} .navbar li {float: none;}.navbar li a {padding: 14px 10px;}
+  .navbar ul {display: flex;justify-content: center;}
+}
+@media screen and (max-width: 800px) {
+  nav {display: flex;align-items: center;text-align: center;max-height: 47px;}
+}
+/* Navigation end*/
+
+/* Footer */
+.footer {
+  background-color: #007bff;color: #fff;padding: 10px;
+  text-align: center;position: fixed;bottom: 0;width: 100%;
+}
+.footer p {margin: 0;}
+.footer a {color: #fff;text-decoration: none;transition: color 0.3s ease;}
+/* Footer end*/
+
+/* Different */
+.center{margin-left: auto;margin-right: auto;text-align: center;}
+.lametop{margin-top: 200px;}
+/* Different end*/
+
+/* Reset default styles */
+body, h1, h2, h3, h4, h5, h6, p, input, form {margin: 0;padding: 0;box-sizing: border-box;}
+body {font-family: Arial, sans-serif;font-size: 16px;}
+main {margin: 40px;}
+h1 {font-size: 24px;margin-bottom: 20px;}  
+/* Reset default styles end*/
+  
+/* Reg */
+.container {max-width: 250px;margin: 0 auto;padding: 20px;}
+form {display: grid;gap: 10px;}
+label,select,input[type="text"],
+input[type="email"],input[type="password"] {
+	padding: 10px;border-radius: 7px;border: 1px solid rgb(150, 150, 150);
+}
+button[type="submit"] {
+	padding: 10px;background-color: #007bff;color: #fff;
+	border: none;cursor: pointer;transition: background-color 0.3s ease;
+  border-radius: 7px;border: 1px solid rgb(150, 150, 150);
+}
+button[type="submit"]:hover {background-color: #0056b3;}
+/* Reg end*/
